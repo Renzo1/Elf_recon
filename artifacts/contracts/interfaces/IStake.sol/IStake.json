@@ -1,0 +1,227 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IStake",
+  "sourceName": "contracts/interfaces/IStake.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "requestId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "reasonCode",
+          "type": "bytes32"
+        }
+      ],
+      "name": "cancelMintStakeToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "requestId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "reasonCode",
+          "type": "bytes32"
+        }
+      ],
+      "name": "cancelRedeemStakeToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "stakeToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "requestToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "requestTokenAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "walletRequestTokenAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "minStakeAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "executionFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isCollateral",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isNativeToken",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IStake.MintStakeTokenParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "createMintStakeTokenRequest",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "receiver",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "stakeToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "redeemToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "unStakeAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "minRedeemAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "executionFee",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IStake.RedeemStakeTokenParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "createRedeemStakeTokenRequest",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "requestId",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "targetToken",
+              "type": "address"
+            },
+            {
+              "internalType": "int256",
+              "name": "minPrice",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "maxPrice",
+              "type": "int256"
+            }
+          ],
+          "internalType": "struct OracleProcess.OracleParam[]",
+          "name": "oracles",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "executeMintStakeToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "requestId",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "targetToken",
+              "type": "address"
+            },
+            {
+              "internalType": "int256",
+              "name": "minPrice",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "maxPrice",
+              "type": "int256"
+            }
+          ],
+          "internalType": "struct OracleProcess.OracleParam[]",
+          "name": "oracles",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "executeRedeemStakeToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

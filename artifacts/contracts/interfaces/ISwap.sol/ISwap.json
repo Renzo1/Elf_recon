@@ -1,0 +1,56 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ISwap",
+  "sourceName": "contracts/interfaces/ISwap.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "accounts",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address[][]",
+          "name": "accountTokens",
+          "type": "address[][]"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "targetToken",
+              "type": "address"
+            },
+            {
+              "internalType": "int256",
+              "name": "minPrice",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "maxPrice",
+              "type": "int256"
+            }
+          ],
+          "internalType": "struct OracleProcess.OracleParam[]",
+          "name": "oracles",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "swapPortfolioToPayLiability",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

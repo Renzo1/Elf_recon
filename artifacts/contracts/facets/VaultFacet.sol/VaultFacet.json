@@ -1,0 +1,123 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "VaultFacet",
+  "sourceName": "contracts/facets/VaultFacet.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getLpVault",
+      "outputs": [
+        {
+          "internalType": "contract LpVault",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getLpVaultAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPortfolioVault",
+      "outputs": [
+        {
+          "internalType": "contract PortfolioVault",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPortfolioVaultAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTradeVault",
+      "outputs": [
+        {
+          "internalType": "contract TradeVault",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTradeVaultAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610235806100206000396000f3fe608060405234801561001057600080fd5b50600436106100725760003560e01c806397e7b7f21161005057806397e7b7f2146100a8578063da57c7f814610077578063f413e81a146100b057600080fd5b806308ba026f14610077578063131d5c8a146100a85780631f7592ea146100b0575b600080fd5b61007f6100b8565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b61007f61012c565b61007f610177565b600073__$6c53a7bbfdd28a722b2c2755e2b973ba23$__63da57c7f86040518163ffffffff1660e01b8152600401602060405180830381865af4158015610103573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061012791906101c2565b905090565b600073__$6c53a7bbfdd28a722b2c2755e2b973ba23$__63131d5c8a6040518163ffffffff1660e01b8152600401602060405180830381865af4158015610103573d6000803e3d6000fd5b600073__$6c53a7bbfdd28a722b2c2755e2b973ba23$__63f413e81a6040518163ffffffff1660e01b8152600401602060405180830381865af4158015610103573d6000803e3d6000fd5b6000602082840312156101d457600080fd5b815173ffffffffffffffffffffffffffffffffffffffff811681146101f857600080fd5b939250505056fea2646970667358221220815d27d05e7287a4cb9f8880b5a645b3dfc179fef7f569dc45d930da0e6788d364736f6c63430008120033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100725760003560e01c806397e7b7f21161005057806397e7b7f2146100a8578063da57c7f814610077578063f413e81a146100b057600080fd5b806308ba026f14610077578063131d5c8a146100a85780631f7592ea146100b0575b600080fd5b61007f6100b8565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b61007f61012c565b61007f610177565b600073__$6c53a7bbfdd28a722b2c2755e2b973ba23$__63da57c7f86040518163ffffffff1660e01b8152600401602060405180830381865af4158015610103573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061012791906101c2565b905090565b600073__$6c53a7bbfdd28a722b2c2755e2b973ba23$__63131d5c8a6040518163ffffffff1660e01b8152600401602060405180830381865af4158015610103573d6000803e3d6000fd5b600073__$6c53a7bbfdd28a722b2c2755e2b973ba23$__63f413e81a6040518163ffffffff1660e01b8152600401602060405180830381865af4158015610103573d6000803e3d6000fd5b6000602082840312156101d457600080fd5b815173ffffffffffffffffffffffffffffffffffffffff811681146101f857600080fd5b939250505056fea2646970667358221220815d27d05e7287a4cb9f8880b5a645b3dfc179fef7f569dc45d930da0e6788d364736f6c63430008120033",
+  "linkReferences": {
+    "contracts/storage/AppVaultConfig.sol": {
+      "AppVaultConfig": [
+        {
+          "length": 20,
+          "start": 220
+        },
+        {
+          "length": 20,
+          "start": 336
+        },
+        {
+          "length": 20,
+          "start": 411
+        }
+      ]
+    }
+  },
+  "deployedLinkReferences": {
+    "contracts/storage/AppVaultConfig.sol": {
+      "AppVaultConfig": [
+        {
+          "length": 20,
+          "start": 188
+        },
+        {
+          "length": 20,
+          "start": 304
+        },
+        {
+          "length": 20,
+          "start": 379
+        }
+      ]
+    }
+  }
+}

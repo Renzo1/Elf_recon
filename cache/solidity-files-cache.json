@@ -1,0 +1,6665 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/chain/ArbSys.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "b6257757f5a424d085046daa5fe95a91",
+      "sourceName": "contracts/chain/ArbSys.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ArbSys"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/utils/ChainUtils.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "dbafe700f26df707e241c77d3b4f7f47",
+      "sourceName": "contracts/utils/ChainUtils.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../chain/ArbSys.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ChainUtils"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/UsdPool.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "82efac1a61f59f27743d777de91c9614",
+      "sourceName": "contracts/storage/UsdPool.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "../utils/CalUtils.sol",
+        "../utils/ChainUtils.sol",
+        "../utils/TokenUtils.sol",
+        "./AppPoolConfig.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "UsdPool"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/utils/CalUtils.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "421e8928fd9273ea7549782b44b9453b",
+      "sourceName": "contracts/utils/CalUtils.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/Math.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "@openzeppelin/contracts/utils/math/SignedMath.sol",
+        "@openzeppelin/contracts/utils/math/SignedSafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "CalUtils"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/utils/TokenUtils.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "0e4a61e3aa6c3208e1d10150c66b9e50",
+      "sourceName": "contracts/utils/TokenUtils.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "TokenUtils"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/AppPoolConfig.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "50e3b616ac2153c178d9c06545181269",
+      "sourceName": "contracts/storage/AppPoolConfig.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AppStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "AppPoolConfig"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/utils/structs/EnumerableSet.sol": {
+      "lastModificationDate": 1715812734915,
+      "contentHash": "e029f029abc1fd2d85d54fd69086f076",
+      "sourceName": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol": {
+      "lastModificationDate": 1715812734923,
+      "contentHash": "f6f4fda16c536e57069af40a245c985e",
+      "sourceName": "@openzeppelin/contracts/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1715812734923,
+      "contentHash": "fe63409d8a06818b926cf89e0ea88b1b",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/utils/math/SafeCast.sol": {
+      "lastModificationDate": 1715812734923,
+      "contentHash": "67cf2dfe1d1c22b4ea7f242e8a17f431",
+      "sourceName": "@openzeppelin/contracts/utils/math/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/utils/math/SignedSafeMath.sol": {
+      "lastModificationDate": 1715812734923,
+      "contentHash": "f7b3809e202b5547e9ddd97aaeb1d907",
+      "sourceName": "@openzeppelin/contracts/utils/math/SignedSafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedSafeMath"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol": {
+      "lastModificationDate": 1715812734923,
+      "contentHash": "9488ebd4daacfee8ad04811600d7d061",
+      "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedMath"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1715812734919,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1715812734919,
+      "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/AppStorage.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "9211094f45bcd4212de50d3c8c87e55a",
+      "sourceName": "contracts/storage/AppStorage.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "AppStorage"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1715812734923,
+      "contentHash": "48686fc32a22a3754b8e63321857dd2a",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol",
+        "./math/SignedMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/PositionQueryProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "c6fcafa67f153190024ba830dbbc9fb6",
+      "sourceName": "contracts/process/PositionQueryProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/Math.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "@openzeppelin/contracts/utils/math/SignedSafeMath.sol",
+        "../storage/Position.sol",
+        "../storage/Account.sol",
+        "../storage/AppConfig.sol",
+        "./MarketQueryProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "PositionQueryProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/Position.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "71edd86c521f51f99724b4eed0a1f1a3",
+      "sourceName": "contracts/storage/Position.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "../utils/Errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Position"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/Account.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "d505b99a576791bfc91788a4dcf7eeee",
+      "sourceName": "contracts/storage/Account.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "./CommonData.sol",
+        "./AppTradeTokenConfig.sol",
+        "../utils/Errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Account"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/AppConfig.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "1d7c0af4340a5d878c503d62c593178d",
+      "sourceName": "contracts/storage/AppConfig.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AppStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "AppConfig"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/MarketQueryProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "bb7607d4f0513f065dff43884a690918",
+      "sourceName": "contracts/process/MarketQueryProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IMarket.sol",
+        "../storage/Market.sol",
+        "../storage/AppTradeConfig.sol",
+        "./OracleProcess.sol",
+        "./LpPoolQueryProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "MarketQueryProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/utils/Errors.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "f2fa133aca583428a19f1cd6560847a7",
+      "sourceName": "contracts/utils/Errors.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Errors"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/CommonData.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "86f1178b2cd014003b2a1706af649428",
+      "sourceName": "contracts/storage/CommonData.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "@openzeppelin/contracts/utils/structs/EnumerableMap.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "CommonData"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/AppTradeTokenConfig.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "6db1774b476fd50679ff3543b49196ee",
+      "sourceName": "contracts/storage/AppTradeTokenConfig.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AppStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "AppTradeTokenConfig"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/utils/structs/EnumerableMap.sol": {
+      "lastModificationDate": 1715812734915,
+      "contentHash": "95822db95440af83b6df65ea18862ed9",
+      "sourceName": "@openzeppelin/contracts/utils/structs/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IMarket.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "933cda4083d43e11602d3547bc44376c",
+      "sourceName": "contracts/interfaces/IMarket.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/MarketQueryProcess.sol",
+        "../interfaces/IConfig.sol",
+        "../process/OracleProcess.sol",
+        "../storage/Symbol.sol",
+        "../storage/Market.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IMarket"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/Market.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "c8e71cfeb6ff049b2bb4b02295fbeac3",
+      "sourceName": "contracts/storage/Market.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "@openzeppelin/contracts/utils/structs/EnumerableMap.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Market"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/AppTradeConfig.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "61a207a795512d232aa933a41f447da8",
+      "sourceName": "contracts/storage/AppTradeConfig.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AppStorage.sol",
+        "./AppTradeTokenConfig.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "AppTradeConfig"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/OracleProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "b69d5d1287a6f641418e91ff56094036",
+      "sourceName": "contracts/process/OracleProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
+        "@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "../storage/OracleFeed.sol",
+        "../storage/OraclePrice.sol",
+        "../utils/AddressUtils.sol",
+        "../utils/Errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "OracleProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/LpPoolQueryProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "386770ce42c43dd9488c079b949f12ba",
+      "sourceName": "contracts/process/LpPoolQueryProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "@openzeppelin/contracts/utils/math/SignedSafeMath.sol",
+        "../interfaces/IPool.sol",
+        "../storage/LpPool.sol",
+        "../storage/UsdPool.sol",
+        "../storage/Market.sol",
+        "../storage/Symbol.sol",
+        "../storage/CommonData.sol",
+        "../utils/Errors.sol",
+        "../utils/CalUtils.sol",
+        "../utils/TokenUtils.sol",
+        "./OracleProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "LpPoolQueryProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IConfig.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "f4443acc0464a7b7f471bd42848aa201",
+      "sourceName": "contracts/interfaces/IConfig.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../storage/AppConfig.sol",
+        "../storage/AppTradeConfig.sol",
+        "../storage/AppPoolConfig.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IConfig"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/Symbol.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "20741e65229795af86b943777ebfb337",
+      "sourceName": "contracts/storage/Symbol.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Symbol"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/OracleFeed.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "751f4b13ca58ef06d856c7da9cbfbfc5",
+      "sourceName": "contracts/storage/OracleFeed.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "OracleFeed"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/OraclePrice.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "893823a2e397d4fe6d9dee4529e50dd1",
+      "sourceName": "contracts/storage/OraclePrice.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "OraclePrice"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/utils/AddressUtils.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "1068a04089c29371b99582b4cce2e3b6",
+      "sourceName": "contracts/utils/AddressUtils.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "AddressUtils"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@chainlink+contracts@0.6.1_ethers@6.12.1/node_modules/@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": {
+      "lastModificationDate": 1715812734899,
+      "contentHash": "d9654a0fc044a31d4106ee6bca772add",
+      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AggregatorV3Interface"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IPool.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "1c90c17a568d2d4eab70375b8dddb754",
+      "sourceName": "contracts/interfaces/IPool.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/OracleProcess.sol",
+        "../storage/LpPool.sol",
+        "../storage/UsdPool.sol",
+        "../storage/Mint.sol",
+        "../storage/Redeem.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IPool"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/LpPool.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "26a3b8f97f8fc304da541f30aa0418e8",
+      "sourceName": "contracts/storage/LpPool.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "@openzeppelin/contracts/utils/structs/EnumerableMap.sol",
+        "@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "../utils/CalUtils.sol",
+        "../utils/ChainUtils.sol",
+        "../utils/Errors.sol",
+        "./AppPoolConfig.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "LpPool"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1715812734919,
+      "contentHash": "3ae5166c6827a9cf1a7a462d1632b464",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/Mint.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "35de0e5a887e89338348bdb3012d4ab6",
+      "sourceName": "contracts/storage/Mint.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Mint"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/Redeem.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "d84468e7ac6b35e0fdab825d6897d8b0",
+      "sourceName": "contracts/storage/Redeem.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Redeem"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1715812734915,
+      "contentHash": "f07feb4a44b1a4872370da5aa70e8e46",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/TidyRewardsProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "4babf1381fe0e0b452334a89831ec63e",
+      "sourceName": "contracts/process/TidyRewardsProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "../interfaces/IVault.sol",
+        "../interfaces/IFee.sol",
+        "../storage/FeeRewards.sol",
+        "../storage/StakingAccount.sol",
+        "../storage/UuidCreator.sol",
+        "./VaultProcess.sol",
+        "./LpPoolQueryProcess.sol",
+        "./GasProcess.sol",
+        "./AssetsProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "TidyRewardsProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IVault.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "54799afeb33062bace48371c3e183ec6",
+      "sourceName": "contracts/interfaces/IVault.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../vault/TradeVault.sol",
+        "../vault/LpVault.sol",
+        "../vault/PortfolioVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IVault"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IFee.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "0a3605f75b0bf6256ab095ec469ac267",
+      "sourceName": "contracts/interfaces/IFee.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/OracleProcess.sol",
+        "../process/FeeQueryProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IFee"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/FeeRewards.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "ad30aa621c94b834c0adad61e4f26b60",
+      "sourceName": "contracts/storage/FeeRewards.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableMap.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "FeeRewards"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/StakingAccount.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "d23834c61159ae3e1149ff0ef9290927",
+      "sourceName": "contracts/storage/StakingAccount.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "./LpPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "StakingAccount"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/UuidCreator.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "bf0fe3779235c110dbb02e97da5f4979",
+      "sourceName": "contracts/storage/UuidCreator.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "UuidCreator"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/VaultProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "4495b540a5f6bbf95e5b3d4dfcb2693f",
+      "sourceName": "contracts/process/VaultProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IWETH.sol",
+        "../vault/Vault.sol",
+        "../storage/AppConfig.sol",
+        "../utils/Errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "VaultProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/AssetsProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "9de8c61a77255b160239a3018ce90650",
+      "sourceName": "contracts/process/AssetsProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IVault.sol",
+        "../interfaces/IWETH.sol",
+        "../storage/UuidCreator.sol",
+        "../storage/Withdraw.sol",
+        "../storage/CommonData.sol",
+        "../utils/TransferUtils.sol",
+        "./AccountProcess.sol",
+        "./PositionMarginProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "AssetsProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/GasProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "f439fa1f16a40499017b81cfe92cedd4",
+      "sourceName": "contracts/process/GasProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./VaultProcess.sol",
+        "../interfaces/IVault.sol",
+        "../storage/AppConfig.sol",
+        "../storage/CommonData.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "GasProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1715812734923,
+      "contentHash": "1b5d667d3740d866eca0352758e59827",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../extensions/IERC20Permit.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/vault/TradeVault.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "e0d1811eca7da761fab7b577c135fa7d",
+      "sourceName": "contracts/vault/TradeVault.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Vault.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "TradeVault"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/vault/LpVault.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "eaaf82abf2aa5ace760e936aac3a1f3e",
+      "sourceName": "contracts/vault/LpVault.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Vault.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "LpVault"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/vault/PortfolioVault.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "08346b5a318ac6bdd0ab628322af9dec",
+      "sourceName": "contracts/vault/PortfolioVault.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Vault.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "PortfolioVault"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/vault/Vault.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "a53b3bed2dccfe46474977675d312b3d",
+      "sourceName": "contracts/vault/Vault.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "../utils/TransferUtils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Vault"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/utils/TransferUtils.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "9fb55050aa771c2ac5ab70fa8f36724f",
+      "sourceName": "contracts/utils/TransferUtils.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "TransferUtils"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/access/AccessControl.sol": {
+      "lastModificationDate": 1715812734915,
+      "contentHash": "a2b1ec38a8dad325a596f926890772b8",
+      "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControl.sol",
+        "../utils/Context.sol",
+        "../utils/Strings.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1715812735127,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/access/IAccessControl.sol": {
+      "lastModificationDate": 1715812734919,
+      "contentHash": "57c84298234411cea19c7c284d86be8b",
+      "sourceName": "@openzeppelin/contracts/access/IAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControl"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1715812735127,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/FeeQueryProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "093ed0e20cb23781ad9aeeb86d45050a",
+      "sourceName": "contracts/process/FeeQueryProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "../interfaces/IFee.sol",
+        "../storage/AppConfig.sol",
+        "../storage/Position.sol",
+        "../storage/FeeRewards.sol",
+        "../storage/StakingAccount.sol",
+        "../storage/CommonData.sol",
+        "../utils/CalUtils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "FeeQueryProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1715812734915,
+      "contentHash": "211ffd288c1588ba8c10eae668ca3c66",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
+      "lastModificationDate": 1715812734919,
+      "contentHash": "525fcdad8d171312933f47baf01d1ed8",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IWETH.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "db96a29cf02680b36d4838e499e2398e",
+      "sourceName": "contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/Withdraw.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "c686a2939edb8d8ba13ca6cb96ba28c5",
+      "sourceName": "contracts/storage/Withdraw.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Withdraw"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/AccountProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "00ec815031a96d1500ae89c6ae6de8c3",
+      "sourceName": "contracts/process/AccountProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "../storage/Account.sol",
+        "./OracleProcess.sol",
+        "./PositionQueryProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "AccountProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/PositionMarginProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "aa8441e8086ed50e17eeb3c83bdbac9d",
+      "sourceName": "contracts/process/PositionMarginProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IVault.sol",
+        "../interfaces/IPosition.sol",
+        "../storage/Position.sol",
+        "../storage/UpdatePositionMargin.sol",
+        "../storage/UpdateLeverage.sol",
+        "../storage/UuidCreator.sol",
+        "../storage/Order.sol",
+        "./OracleProcess.sol",
+        "./LpPoolProcess.sol",
+        "./FeeProcess.sol",
+        "./VaultProcess.sol",
+        "./AccountProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "PositionMarginProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IPosition.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "8a856f8b1d59e40f5625df9ae81e5d9a",
+      "sourceName": "contracts/interfaces/IPosition.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/OracleProcess.sol",
+        "../storage/Position.sol",
+        "../storage/UpdatePositionMargin.sol",
+        "../storage/UpdateLeverage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IPosition"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/UpdatePositionMargin.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "8ef33c197e6b7d4123cd73ac014f87dc",
+      "sourceName": "contracts/storage/UpdatePositionMargin.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "UpdatePositionMargin"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/UpdateLeverage.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "8b11e034c2775612399e01e7f53b2286",
+      "sourceName": "contracts/storage/UpdateLeverage.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "UpdateLeverage"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/Order.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "c35936f9298c34753c5a5ddc2d764678",
+      "sourceName": "contracts/storage/Order.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Order"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/LpPoolProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "b54358833ec522bb7178ea46ddd22b94",
+      "sourceName": "contracts/process/LpPoolProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./OracleProcess.sol",
+        "./MarketProcess.sol",
+        "./LpPoolQueryProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "LpPoolProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/FeeProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "236e7aa4a7aa0e421746558586d6e4b2",
+      "sourceName": "contracts/process/FeeProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "../storage/FeeRewards.sol",
+        "../storage/Position.sol",
+        "../storage/StakingAccount.sol",
+        "./MarketProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "FeeProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/MarketProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "962fce9e3d708e80d45323361f982bb5",
+      "sourceName": "contracts/process/MarketProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../storage/AppConfig.sol",
+        "./MarketQueryProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "MarketProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/router/DiamondInit.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "fa611d737f7e9e3fe2f6e621b18b4e02",
+      "sourceName": "contracts/router/DiamondInit.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "../storage/LibDiamond.sol",
+        "../interfaces/IDiamondLoupe.sol",
+        "../interfaces/IDiamondCut.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DiamondInit"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/LibDiamond.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "32e1e9b3f20ce4ae846c03ccf7135823",
+      "sourceName": "contracts/storage/LibDiamond.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IDiamond.sol",
+        "../interfaces/IDiamondCut.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "LibDiamond"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IDiamondLoupe.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "a471cd6a18e337530aa0fb37a1dd2294",
+      "sourceName": "contracts/interfaces/IDiamondLoupe.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IDiamondLoupe"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IDiamondCut.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "74d1e316ccff781e1e23bcfed30d7a05",
+      "sourceName": "contracts/interfaces/IDiamondCut.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IDiamond.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IDiamondCut"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IDiamond.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "ce4e3d69362651cbfbb53d88dc5dfc98",
+      "sourceName": "contracts/interfaces/IDiamond.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IDiamond"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/router/Diamond.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "d1539e013866c7005f0cca60f1f3279c",
+      "sourceName": "contracts/router/Diamond.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "../storage/LibDiamond.sol",
+        "../interfaces/IDiamond.sol",
+        "../interfaces/IDiamondCut.sol",
+        "../interfaces/IDiamondLoupe.sol",
+        "../storage/RoleAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Diamond"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/RoleAccessControl.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "f2c89e0eb1cbdeccedec9a291d115d45",
+      "sourceName": "contracts/storage/RoleAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "RoleAccessControl"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/SwapProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "aa94b2c14eae9c7cec1f5b02945e4cdb",
+      "sourceName": "contracts/process/SwapProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol",
+        "@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol",
+        "../interfaces/ISwap.sol",
+        "../storage/AppConfig.sol",
+        "../storage/AppTradeConfig.sol",
+        "../utils/CalUtils.sol",
+        "../utils/TokenUtils.sol",
+        "./VaultProcess.sol",
+        "./OracleProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "SwapProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/ISwap.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "3c778323af29c1b3d9c6817858fa4257",
+      "sourceName": "contracts/interfaces/ISwap.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/AccountProcess.sol",
+        "../process/RebalanceProcess.sol",
+        "../process/OracleProcess.sol",
+        "../storage/Withdraw.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ISwap"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@uniswap+v3-periphery@1.4.4/node_modules/@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol": {
+      "lastModificationDate": 1715812734943,
+      "contentHash": "ffd42687b3db01d30c24213d961fcf9f",
+      "sourceName": "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "ISwapRouter"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@uniswap+v3-periphery@1.4.4/node_modules/@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol": {
+      "lastModificationDate": 1715812734943,
+      "contentHash": "f0616d1842da6584f8454c9b323d777f",
+      "sourceName": "@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/RebalanceProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "9361ac799adf71a742612d7fefb9bafe",
+      "sourceName": "contracts/process/RebalanceProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol",
+        "@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol",
+        "../interfaces/IRebalance.sol",
+        "../interfaces/IVault.sol",
+        "../interfaces/ISwap.sol",
+        "../storage/LpPool.sol",
+        "../storage/UsdPool.sol",
+        "../storage/CommonData.sol",
+        "../storage/AppTradeConfig.sol",
+        "../utils/TokenUtils.sol",
+        "../utils/CalUtils.sol",
+        "./VaultProcess.sol",
+        "./OracleProcess.sol",
+        "./SwapProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "RebalanceProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IRebalance.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "1c05c61228a65d9834434a0d386904f5",
+      "sourceName": "contracts/interfaces/IRebalance.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/OracleProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IRebalance"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@uniswap+v3-core@1.0.1/node_modules/@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol": {
+      "lastModificationDate": 1715812734935,
+      "contentHash": "a8ba2d37b0107911ae0e3b0e123cbd83",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3SwapCallback"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/RedeemProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "c4f5a46c2c2621e1b2dfb7e58c43c02a",
+      "sourceName": "contracts/process/RedeemProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IVault.sol",
+        "../interfaces/IStake.sol",
+        "../vault/Vault.sol",
+        "../vault/LpVault.sol",
+        "../vault/StakeToken.sol",
+        "../storage/StakingAccount.sol",
+        "./OracleProcess.sol",
+        "./GasProcess.sol",
+        "./LpPoolProcess.sol",
+        "./LpPoolQueryProcess.sol",
+        "./FeeRewardsProcess.sol",
+        "./AssetsProcess.sol",
+        "./MintProcess.sol",
+        "./FeeQueryProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "RedeemProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IStake.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "adb6057afbfa58f16d17924f1f47462b",
+      "sourceName": "contracts/interfaces/IStake.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/OracleProcess.sol",
+        "../storage/Mint.sol",
+        "../storage/Redeem.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IStake"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/vault/StakeToken.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "085425bc4d659f83daf121092d613105",
+      "sourceName": "contracts/vault/StakeToken.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "./Vault.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "StakeToken"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/FeeRewardsProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "5b9787bc8b9b94e03099d5db74bd02d6",
+      "sourceName": "contracts/process/FeeRewardsProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "../interfaces/IVault.sol",
+        "../interfaces/IFee.sol",
+        "./VaultProcess.sol",
+        "./LpPoolQueryProcess.sol",
+        "./GasProcess.sol",
+        "./AssetsProcess.sol",
+        "./TidyRewardsProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "FeeRewardsProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/MintProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "9792b6675fdfaef2c63f36b049217d64",
+      "sourceName": "contracts/process/MintProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "../interfaces/IStake.sol",
+        "../interfaces/IVault.sol",
+        "../vault/Vault.sol",
+        "../vault/LpVault.sol",
+        "../vault/StakeToken.sol",
+        "./LpPoolQueryProcess.sol",
+        "./FeeProcess.sol",
+        "./FeeRewardsProcess.sol",
+        "./AssetsProcess.sol",
+        "./FeeQueryProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "MintProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/IncreasePositionProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "7e09059c41708e91393e75466ca74dcb",
+      "sourceName": "contracts/process/IncreasePositionProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../storage/Order.sol",
+        "./MarketProcess.sol",
+        "./LpPoolProcess.sol",
+        "./FeeProcess.sol",
+        "./AccountProcess.sol",
+        "./FeeQueryProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IncreasePositionProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/OrderProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "c09409da279b57a5e1a1468bac31e194",
+      "sourceName": "contracts/process/OrderProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "../interfaces/IAccount.sol",
+        "../interfaces/IOrder.sol",
+        "./DecreasePositionProcess.sol",
+        "./IncreasePositionProcess.sol",
+        "./AssetsProcess.sol",
+        "./GasProcess.sol",
+        "./LpPoolProcess.sol",
+        "./FeeProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "OrderProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IAccount.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "27eb583ddf203e1ca9194188c6c3490b",
+      "sourceName": "contracts/interfaces/IAccount.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/AssetsProcess.sol",
+        "../process/OracleProcess.sol",
+        "../storage/Withdraw.sol",
+        "../storage/Account.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IAccount"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IOrder.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "dfcc8c2088ec80624711495024077aa3",
+      "sourceName": "contracts/interfaces/IOrder.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/OrderProcess.sol",
+        "../process/OracleProcess.sol",
+        "../storage/Order.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IOrder"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/DecreasePositionProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "f0c9ad5355d3bec9733f60e407f51b0e",
+      "sourceName": "contracts/process/DecreasePositionProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../storage/InsuranceFund.sol",
+        "./MarketProcess.sol",
+        "./LpPoolProcess.sol",
+        "./FeeProcess.sol",
+        "./AccountProcess.sol",
+        "./CancelOrderProcess.sol",
+        "./FeeQueryProcess.sol",
+        "./PositionMarginProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "DecreasePositionProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/InsuranceFund.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "69036352342374555a1cc7a3351e69ad",
+      "sourceName": "contracts/storage/InsuranceFund.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableMap.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "InsuranceFund"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/CancelOrderProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "d1e9715d2309ce008923e16ea6247046",
+      "sourceName": "contracts/process/CancelOrderProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IVault.sol",
+        "./VaultProcess.sol",
+        "../storage/Account.sol",
+        "../storage/Order.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "CancelOrderProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/LiquidationProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "8c1e442ab84511057f9f6443c3d19055",
+      "sourceName": "contracts/process/LiquidationProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ILiquidation.sol",
+        "./PositionQueryProcess.sol",
+        "./DecreasePositionProcess.sol",
+        "./CancelOrderProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "LiquidationProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/ILiquidation.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "e8e751a2971524efa1bb4f160034e56c",
+      "sourceName": "contracts/interfaces/ILiquidation.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/OracleProcess.sol",
+        "../storage/LiabilityClean.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ILiquidation"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/LiabilityClean.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "61ab9d60bc0f7310acfeb5b1ec13551b",
+      "sourceName": "contracts/storage/LiabilityClean.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableMap.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "LiabilityClean"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/OrderFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "0d28d4e10da9e21376f03bf68f28117f",
+      "sourceName": "contracts/facets/OrderFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "../interfaces/IOrder.sol",
+        "../interfaces/IAccount.sol",
+        "../process/AssetsProcess.sol",
+        "../process/OrderProcess.sol",
+        "../process/CancelOrderProcess.sol",
+        "../process/GasProcess.sol",
+        "../storage/RoleAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "OrderFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/node_modules/.pnpm/@openzeppelin+contracts@4.9.6/node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1715812734923,
+      "contentHash": "1535f8c0c68463f8c1b5239f7584e71f",
+      "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/StakeFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "490adffee51fd48ffdfb3f68f1a08fa9",
+      "sourceName": "contracts/facets/StakeFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "../interfaces/IStake.sol",
+        "../interfaces/IAccount.sol",
+        "../process/MintProcess.sol",
+        "../process/RedeemProcess.sol",
+        "../process/AssetsProcess.sol",
+        "../process/GasProcess.sol",
+        "../storage/CommonData.sol",
+        "../storage/UuidCreator.sol",
+        "../storage/RoleAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "StakeFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/ClaimRewardsProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "6e774a9557b1ede32a6740545afb2232",
+      "sourceName": "contracts/process/ClaimRewardsProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "../interfaces/IVault.sol",
+        "../interfaces/IFee.sol",
+        "../storage/CommonData.sol",
+        "../storage/ClaimRewards.sol",
+        "../storage/UuidCreator.sol",
+        "./VaultProcess.sol",
+        "./LpPoolQueryProcess.sol",
+        "./GasProcess.sol",
+        "./AssetsProcess.sol",
+        "./FeeRewardsProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ClaimRewardsProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/ClaimRewards.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "6a422d781950d38c4dd1c43f49afb04b",
+      "sourceName": "contracts/storage/ClaimRewards.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ClaimRewards"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/Referral.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "6efbf045d4d392a83eea7cd76eaae5a5",
+      "sourceName": "contracts/storage/Referral.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AppStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Referral"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IReferral.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "8911c18e451e8fc62b4b6ade98d685a7",
+      "sourceName": "contracts/interfaces/IReferral.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../storage/Referral.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IReferral"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/ReferralFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "601561354371d0bb87b5c690428ca917",
+      "sourceName": "contracts/facets/ReferralFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IReferral.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ReferralFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/AppVaultConfig.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "8361957d3c1dd126fb4f95b995e9828d",
+      "sourceName": "contracts/storage/AppVaultConfig.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AppStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "AppVaultConfig"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/ConfigProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "ec240f4f88d42def61bb083076fcb6b5",
+      "sourceName": "contracts/process/ConfigProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "../interfaces/IConfig.sol",
+        "../storage/AppConfig.sol",
+        "../storage/AppTradeConfig.sol",
+        "../storage/AppPoolConfig.sol",
+        "../storage/AppVaultConfig.sol",
+        "../storage/UsdPool.sol",
+        "../utils/Errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ConfigProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IMarketManager.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "13a89c3e123c5d6cbe87d7c2a422aa55",
+      "sourceName": "contracts/interfaces/IMarketManager.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/MarketFactoryProcess.sol",
+        "../process/ConfigProcess.sol",
+        "../interfaces/IConfig.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IMarketManager"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/process/MarketFactoryProcess.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "6dcb7fcd5fd1991d3d25db7e068c8f0f",
+      "sourceName": "contracts/process/MarketFactoryProcess.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../storage/Symbol.sol",
+        "../storage/LpPool.sol",
+        "../storage/Market.sol",
+        "../storage/CommonData.sol",
+        "../utils/Errors.sol",
+        "../vault/StakeToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "MarketFactoryProcess"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/MarketFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "4f772821aeaa5c9a07b3cdba32e24c4c",
+      "sourceName": "contracts/facets/MarketFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "../interfaces/IMarket.sol",
+        "../process/MarketQueryProcess.sol",
+        "../process/ConfigProcess.sol",
+        "../storage/CommonData.sol",
+        "../storage/UuidCreator.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "MarketFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/MarketManagerFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "7b4ef723f23f7b66f6aa2626b4b77b61",
+      "sourceName": "contracts/facets/MarketManagerFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "../interfaces/IMarketManager.sol",
+        "../process/MarketFactoryProcess.sol",
+        "../process/OracleProcess.sol",
+        "../storage/RoleAccessControl.sol",
+        "../utils/AddressUtils.sol",
+        "../utils/TypeUtils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "MarketManagerFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/utils/TypeUtils.sol": {
+      "lastModificationDate": 1715812604945,
+      "contentHash": "06e0e277d9dbd8387508c7d2f32aabe3",
+      "sourceName": "contracts/utils/TypeUtils.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "TypeUtils"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/PositionFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "0855ac2a752d65f082592faa48646551",
+      "sourceName": "contracts/facets/PositionFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "../interfaces/IPosition.sol",
+        "../interfaces/IAccount.sol",
+        "../process/AssetsProcess.sol",
+        "../process/DecreasePositionProcess.sol",
+        "../process/PositionMarginProcess.sol",
+        "../process/GasProcess.sol",
+        "../process/ConfigProcess.sol",
+        "../storage/UuidCreator.sol",
+        "../storage/RoleAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "PositionFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/SwapFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "df41c1e9987fccf13b15cc4bda3c9068",
+      "sourceName": "contracts/facets/SwapFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "../interfaces/ISwap.sol",
+        "../interfaces/IVault.sol",
+        "../process/SwapProcess.sol",
+        "../process/AssetsProcess.sol",
+        "../storage/RoleAccessControl.sol",
+        "../utils/Errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "SwapFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/AccountFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "28baafbdbeef5816863b85099febe34c",
+      "sourceName": "contracts/facets/AccountFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "../interfaces/IAccount.sol",
+        "../interfaces/IVault.sol",
+        "../interfaces/IWETH.sol",
+        "../process/AssetsProcess.sol",
+        "../process/AccountProcess.sol",
+        "../storage/RoleAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "AccountFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/mock/WETH.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "14e04d3ae5ed2e19ed8277e317eb2688",
+      "sourceName": "contracts/mock/WETH.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IWETH.sol",
+        "../mock/MockToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "WETH"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/mock/MockToken.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "c6376c5d93fa7fc4ea5559668e44b79a",
+      "sourceName": "contracts/mock/MockToken.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "MockToken"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/FaucetFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "6850b4385f7b0aaf4ec11f279c4c7c1e",
+      "sourceName": "contracts/facets/FaucetFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IFaucet.sol",
+        "../process/VaultProcess.sol",
+        "../mock/MockToken.sol",
+        "../storage/RoleAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "FaucetFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IFaucet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "3c87fa05c4cf424411389b25b6919390",
+      "sourceName": "contracts/interfaces/IFaucet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IFaucet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/ConfigFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "eeb17c3e60f49515915dcd1071e8005a",
+      "sourceName": "contracts/facets/ConfigFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/ConfigProcess.sol",
+        "../storage/RoleAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ConfigFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/VaultFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "b82e131d1e2da829c58735cb52e0192c",
+      "sourceName": "contracts/facets/VaultFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IVault.sol",
+        "../vault/TradeVault.sol",
+        "../vault/LpVault.sol",
+        "../vault/PortfolioVault.sol",
+        "../storage/AppVaultConfig.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "VaultFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/StakingAccountFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "a22be80127506833c677f9f79245df95",
+      "sourceName": "contracts/facets/StakingAccountFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IStakingAccount.sol",
+        "../storage/StakingAccount.sol",
+        "../storage/CommonData.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "StakingAccountFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IStakingAccount.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "fdbf55053f855ff09b5ff4ebfc588196",
+      "sourceName": "contracts/interfaces/IStakingAccount.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IStakingAccount"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/RebalanceFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "e2e52dd5dbb8fb28623ede494a501dad",
+      "sourceName": "contracts/facets/RebalanceFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IRebalance.sol",
+        "../process/RebalanceProcess.sol",
+        "../process/SwapProcess.sol",
+        "../process/GasProcess.sol",
+        "../storage/RoleAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "RebalanceFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/LiquidationFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "18e33491ad59094d39f43f92f646d6a6",
+      "sourceName": "contracts/facets/LiquidationFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ILiquidation.sol",
+        "../process/LiquidationProcess.sol",
+        "../process/GasProcess.sol",
+        "../process/AssetsProcess.sol",
+        "../storage/InsuranceFund.sol",
+        "../storage/RoleAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "LiquidationFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/FeeFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "3a004c096a32c89d2261a55e80cd77bb",
+      "sourceName": "contracts/facets/FeeFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IFee.sol",
+        "../storage/RoleAccessControl.sol",
+        "../process/FeeQueryProcess.sol",
+        "../process/FeeRewardsProcess.sol",
+        "../process/ClaimRewardsProcess.sol",
+        "../process/OracleProcess.sol",
+        "../process/GasProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "FeeFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/PoolFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "0edc46f08568539ec080765da993cc2b",
+      "sourceName": "contracts/facets/PoolFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "../interfaces/IPool.sol",
+        "../process/LpPoolQueryProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "PoolFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IOracle.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "382febbd4a5dc05791aa76b578caf0b2",
+      "sourceName": "contracts/interfaces/IOracle.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../process/OracleProcess.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IOracle"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/OracleFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "4b8052bc254b296e6e31192e2e56f7ee",
+      "sourceName": "contracts/facets/OracleFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IOracle.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "OracleFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/storage/PermissionFlag.sol": {
+      "lastModificationDate": 1715812604941,
+      "contentHash": "a85a4d37fb7f2a2c09047953e6f7ae66",
+      "sourceName": "contracts/storage/PermissionFlag.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "PermissionFlag"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/RoleAccessControlFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "08f62fcfa0f64edf46504e46dd56acf0",
+      "sourceName": "contracts/facets/RoleAccessControlFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IRoleAccessControl.sol",
+        "../storage/RoleAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "RoleAccessControlFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/interfaces/IRoleAccessControl.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "368f5c84c46f2b4037220b4a4b6d52f9",
+      "sourceName": "contracts/interfaces/IRoleAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "IRoleAccessControl"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/DiamondCutFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "12de6fb48acd61a427429b9222ec0147",
+      "sourceName": "contracts/facets/DiamondCutFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IDiamondCut.sol",
+        "../storage/LibDiamond.sol",
+        "../storage/RoleAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "DiamondCutFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/facets/DiamondLoupeFacet.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "adc96bbbe5557796a53c7d79f555fb30",
+      "sourceName": "contracts/facets/DiamondLoupeFacet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "../storage/LibDiamond.sol",
+        "../interfaces/IDiamondLoupe.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "DiamondLoupeFacet"
+      ]
+    },
+    "/home/krisrenzo/Documents/Audits/Contests/Sherlock/Elfi/2024-05-elfi-protocol/elfi-perp-contracts/contracts/mock/Multicall3.sol": {
+      "lastModificationDate": 1715812604925,
+      "contentHash": "8fc6aa397e121ae6f25a74260ea90be7",
+      "sourceName": "contracts/mock/Multicall3.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 4294967295
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Multicall3"
+      ]
+    }
+  }
+}
